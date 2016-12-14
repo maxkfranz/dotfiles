@@ -1,0 +1,19 @@
+"*":
+  "atom-beautify":
+    js:
+      indent_size: 2
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "isotope-ui"
+      "monokai"
+    ]
+  "file-icons":
+    coloured: false
+  "fold-navigator": {}
+  linter:
+    gutterPosition: "Left"
+  welcome:
+    showOnStartup: false
