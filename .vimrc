@@ -18,6 +18,10 @@ Plug 'valloric/youcompleteme'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'groenewege/vim-less'
 
+" Util
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -28,7 +32,23 @@ hi Normal ctermbg=none
 "hi NonText ctermbg=none
 "hi LineNr ctermbg=none
 
+" Replace tabs with 2 spaces
 set tabstop=2
 set expandtab
+
+" Show line numbers
 set number
+
+" Bash-like autocomplete for :edit
+set wildmenu
+set wildmode=longest,list 
+set wildignore=**/node_modules/**
+
+" CTRL+N | CTRL+\ => open NerdTree
+map <C-n> :NERDTreeToggle<CR>
+map <C-\> :NERDTreeToggle<CR>
+
+" CTRL+P | CTRL+T => open CtrlP
+map <C-p> :CtrlP<CR>
+map <C-t> :CtrlP<CR>
 
