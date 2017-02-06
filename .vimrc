@@ -44,11 +44,14 @@ set wildmenu
 set wildmode=longest,list 
 set wildignore=**/node_modules/**
 
-" CTRL+N | CTRL+\ => open NerdTree
-map <C-n> :NERDTreeToggle<CR>
+" CTRL+\ => open NerdTree
 map <C-\> :NERDTreeToggle<CR>
 
 " CTRL+P | CTRL+T => open CtrlP
 map <C-p> :CtrlP<CR>
 map <C-t> :CtrlP<CR>
 
+" CTRL+J | CTRL+K | CTRL+N => nav tabs
+map <C-j> :tabprev<CR>
+map <C-k> :tabnext<CR>
+map <C-n> :tabnew<CR>
