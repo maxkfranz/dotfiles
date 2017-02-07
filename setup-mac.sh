@@ -6,6 +6,13 @@ BREWS="
   pv
   openssl
   git
+  cmake
+  maven
+  neo4j
+  redis
+  mongodb
+  rethinkdb
+  wget
 "
 brew install $BREWS
 
