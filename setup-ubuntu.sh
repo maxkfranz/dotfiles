@@ -41,6 +41,7 @@ PKGS="
   network-manager-openvpn-gnome
   network-manager-pptp
   network-manager-vpnc
+  openssh-server
 "
 
 # todo gitkraken?
