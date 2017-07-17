@@ -11,10 +11,18 @@ PKGS="
   isotope-ui
   language-ejs
   linter
+  linter-ui-default
   linter-eslint
+  linter-jsonlint
+  linter-flow
   merge-conflicts
   minimap
   monokai
+  busy-signal
+  docblockr
+  intentions
+  refactor
+  refactor-javascript
 "
 
 apm install $PKGS
