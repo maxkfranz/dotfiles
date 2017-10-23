@@ -13,8 +13,15 @@ BREWS="
   mongodb
   rethinkdb
   wget
+  tmux
+  node
+  java
+  scala
 "
 brew install $BREWS
+
+sudo chgrp -R admin /usr/local
+sudo chmod -R g+w /usr/local
 
 # cask
 CASKS="
@@ -43,6 +50,14 @@ CASKS="
   teleport
   android-studio
   intellij-idea
+  visual-studio-code
+  synergy
+  beamer
+  iterm2
+  disk-inventory-x
+  keeweb
+  screens
+  sublime-text
 "
 brew tap caskroom/cask
 brew cask install $CASKS
