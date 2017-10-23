@@ -7,20 +7,26 @@ call plug#begin('~/.vim/plugged')
 " Text color theme
 Plug 'tomasr/molokai'
 
+" Syntax
+Plug 'sheerun/vim-polyglot'
+
 " JS
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+"Plug 'pangloss/vim-javascript'
+"Plug 'mxw/vim-jsx'
 
 " Autocomplete
 " Plug 'valloric/youcompleteme'
 
 " Stylesheets
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'groenewege/vim-less'
+"Plug 'cakebaker/scss-syntax.vim'
+"Plug 'groenewege/vim-less'
 
 " Util
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
+
+" Git
+Plug 'airblade/vim-gitgutter'
 
 " Add plugins to &runtimepath
 call plug#end()
