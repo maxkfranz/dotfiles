@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tomasr/molokai'
 
 " Syntax
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
 " JS
 "Plug 'pangloss/vim-javascript'
@@ -41,7 +41,11 @@ hi Normal ctermbg=none
 
 " Replace tabs with 2 spaces
 set tabstop=2
+set shiftwidth=2
 set expandtab
+set smartindent
+set autoindent
+filetype indent on
 
 " Show line numbers
 set number
@@ -73,4 +77,4 @@ function! Tab_Or_Complete()
     return "\<Tab>"
   endif
 endfunction
-:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+":inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
